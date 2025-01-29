@@ -14,7 +14,7 @@ use App\Http\Controllers\Api\V1\OrderController;
 |
 */
 
-Route::prefix('v1')->group(function () {
+Route::prefix('/v1')->group(function () {
     Route::get('/catalog', [CatalogController::class, 'index']);
     Route::post('/create-order', [OrderController::class, 'createOrder']);
     Route::post('/approve-order', [OrderController::class, 'approveOrder']);
